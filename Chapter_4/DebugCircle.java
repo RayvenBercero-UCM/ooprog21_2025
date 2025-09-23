@@ -6,9 +6,6 @@ public class DebugCircle
    private static double area;
    private static int r;
    
-   public static void main(String[] args){
-      DebugCircle(r);
-   }
    public static int DebugCircle(int r)
    {
       radius = r;
