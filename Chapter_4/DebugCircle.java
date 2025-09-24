@@ -1,27 +1,33 @@
 public class DebugCircle
 {
-   private static int radius;
-   private static int diameter;
-   private static final double PI = 3.14159;
-   private static double area;
-   private static int r;
+   private int radius;
+   private int diameter;
+   private final double PI = 3.14159;
+   private double area;
    
-   public static int DebugCircle(int r)
+   public static void main(String[] args) {
+      DebugCircle circle = new DebugCircle(1);
+
+      System.out.println("Radius: " + circle.getRadius());
+      System.out.println("Diameter: " + circle.getDiameter());
+      System.out.println("Area: " + circle.getArea());
+   }
+   
+   public DebugCircle(int r)
    {
       radius = r;
       diameter = 2 * r;
       area = PI * r * r;
-      return r;
    }
-   public static int getRadius(int radius)
+   public int getRadius()
    {
       return radius;
    }
-   public static int getDiameter(int diameter)
+   public int getDiameter()
    {
       return diameter;
    }
-   public static double getArea(double area)
+   public double getArea()
    {
       return area;
    }
