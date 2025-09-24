@@ -4,13 +4,6 @@ public class DebugBox
    private int length;
    private int height;
    
-   public static void main(String[] args) {
-      DebugBox box = new DebugBox();
-      
-      System.out.println("Length: " + box.length);
-      System.out.println("Width: " + box.width);
-      System.out.println("Height: " + box.height);
-   }
    public DebugBox()
    {
       length = 1;
@@ -35,3 +28,4 @@ public class DebugBox
       return vol;
    }
 }
+
