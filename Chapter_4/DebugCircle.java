@@ -5,14 +5,6 @@ public class DebugCircle
    private final double PI = 3.14159;
    private double area;
    
-   public static void main(String[] args) {
-      DebugCircle circle = new DebugCircle(1);
-
-      System.out.println("Radius: " + circle.getRadius());
-      System.out.println("Diameter: " + circle.getDiameter());
-      System.out.println("Area: " + circle.getArea());
-   }
-   
    public DebugCircle(int r)
    {
       radius = r;
