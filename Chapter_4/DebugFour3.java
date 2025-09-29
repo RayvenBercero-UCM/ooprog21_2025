@@ -9,7 +9,7 @@ public class DebugFour3 {
       int w, l, h;
 
       System.out.print("Enter width of box >> ");
-      w = input.nextInt();150
+      w = input.nextInt();
 
       System.out.print("Enter length of box >> ");
       l = input.nextInt();
@@ -27,3 +27,4 @@ public class DebugFour3 {
       System.out.println("  The volume of the second box is: " + box2.getVolume());
    }
 }
+
