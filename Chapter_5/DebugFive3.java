@@ -23,13 +23,14 @@ public class DebugFive3
         if(item > HIGH)
            output = "Item number too high";
         else
-           if(item <= CUTOFF)
+           if(item < CUTOFF)
               output = "Valid - Item in Automotive Department";
            else
               output = "Valid - Item in Housewares Department";
       System.out.println(output);
    }
 }
+
 
 
 
