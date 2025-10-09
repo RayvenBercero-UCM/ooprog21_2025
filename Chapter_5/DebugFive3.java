@@ -20,7 +20,7 @@ public class DebugFive3
       if(item < LOW)
          output = "Item number too low";
       else
-        if(item >= HIGH)
+        if(item > HIGH)
            output = "Item number too high";
         else
            if(item <= CUTOFF)
@@ -30,5 +30,6 @@ public class DebugFive3
       System.out.println(output);
    }
 }
+
 
 
