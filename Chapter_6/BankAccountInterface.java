@@ -12,7 +12,8 @@ public class BankAccountInterface {
         
     }
     public static void getNewBalanceAccount (BankAccount bankAccount, Scanner input, int choice, int year){
-      while (choice == 1) {
+    
+      do {
             double newBalance = bankAccount.calculateBalanceAccount();
             System.out.println("\nAfter year " + year + " at 0.03 interest rate, balance is " + newBalance);
             year++;
@@ -21,9 +22,11 @@ public class BankAccountInterface {
             choice = input.nextInt();
             
         }
-        input.close();
+        while (choice == 1);
+         input.close();
+        
     }
-
+      
     public static double getBalanceAccount() {
         System.out.println("Enter initial bank balance >> ");
         Scanner input = new Scanner(System.in);
